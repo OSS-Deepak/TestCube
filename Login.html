@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TestCube</title>
+
+<link rel="stylesheet" type="text/css" href="Login.css">
+
+<script language="javascript" type="text/javascript">
+
+ function validateUser()
+ {
+	 var user = document.getElementById('username').value;
+	 var span = document.getElementById('userError');
+	 
+	 if(user==null || user=="")
+		 {
+		    span.innerHTML="Please Enter the username";
+		 } 
+	 else 
+		 {
+		 	span.innerHTML="";
+		 }
+ }
+  
+ function validatePassword()
+ {
+	 var password = document.getElementById('pass').value;
+	 var span = document.getElementById('passError');
+	 
+	 if(password==null || password=="")
+	 {
+	    span.innerHTML="Please Enter the Password";
+	 }
+	 else
+		 {
+		 	span.innerHTML="";
+		 }
+	 
+ }
+
+</script>
+
+</head>
+<body>
+
+   <div id="container">
+   
+       	<div id="login-heading">
+         	<p>Sign in to TestCube</p> 
+      	</div>
+   
+      	<div id="login">
+      
+           <table>
+           
+              	<tr>
+                 	<td>Username* :</td>
+                 	<td><input type="text" id="username" onblur="validateUser()"></td>
+              	</tr>
+              
+              	<tr>
+              		<td></td>
+                 	<td><span id="userError" style="font-size:0.7em"></span></td>
+              	</tr> 
+                             
+              	<tr>
+                 	<td>Password* :</td>
+                 	<td><input type="password" id="pass" onblur="validatePassword()"></td>
+              	</tr>
+              
+              	<tr>
+              		<td></td>
+                 	<td><span id="passError" style="font-size:0.7em"></span></td>
+              	</tr> 
+              
+              	<tr>
+                 	<td><input type="submit" value="Submit"></td>
+                 	<td><input type="submit" value="Reset"  onclick="reset()"></td>
+              	</tr> 
+                              
+           </table>
+      </div>
+   </div>
+   
+   
+
+</body>
+</html>
