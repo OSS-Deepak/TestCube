@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	background-color:black;
+	margin:0px;
+}
+
+@font-face
+{
+	font-family:'open-sans';
+	src:url(../font/OpenSans-Regular.ttf);
+}
+#wrapper
+{
+	    background-color:white;
+		width:100%;
+		height:1000px;
+	    /*margin:0px 50px 50px 100px;*/
+}
+
+#wrapper #header
+{	
+	border:thin solid black;
+	background-color: #333333;
+	height:70px;
+	width:100%;
+	margin-top:0px;	
+}
+
+#wrapper #header #logo
+{
+	float:left;
+	width:200px;
+	height:50px;
+	margin-left:60px;
+	margin-top:15px;
+	font-family:'open-sans';
+	font-size:1.5em;
+	color:#888888;
+	
+}
+
+#wrapper #header #logo img
+{
+	margin-top: 10px;
+}
+
+#wrapper #header #logo span
+{
+	float:right;
+	padding-right: 60px; 
+	padding-top: 4px;
+	
+}
+/*
+#wrapper #header .menu
+{
+	width:70px;
+	height:70px;
+	/*border:thin solid white;
+	float:right;
+	font-family:'open-sans';
+	font-size:0.9em;
+	color:#888888;
+	cursor:pointer;
+}
+
+#wrapper #header .menu:hover
+{
+	background-color:#598990;
+	color:white;
+	
+}*/
+
+#header #menu
+{
+	/*border:thin solid white;*/
+	float:right;
+	list-style-type:none;
+	font-family:'open-sans';
+	font-size:0.95em;
+	color:#888888;
+	/*cursor:pointer;*/
+	margin:0px;
+	height: 50px; width: 400px; 
+	padding-top:20px;
+	padding-left:0px;
+}
+
+#header #menu .menu-option
+{
+	display:inline;
+	width: 40px; height: 40px; 
+	cursor:pointer;
+	padding:20px 25px 30px 20px;
+}
+ 
+#header #menu li:hover
+{
+	background-color:#598990;
+	color:white;
+}
+
+#wrapper #questions_container
+{
+	border:thin solid red;	
+}
+
+#wrapper #questions_container #display_questions
+{
+    border:thin solid red;
+}
+
+#wrapper #questions_container #buttons_container
+{
+   	border:thin solid red;
+}

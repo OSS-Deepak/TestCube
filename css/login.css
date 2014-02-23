@@ -1,0 +1,220 @@
+body
+{
+	background-color:black;
+	margin:0px;
+}
+
+@font-face
+{
+	font-family:'open-sans';
+	src:url(../font/OpenSans-Regular.ttf);
+}
+#wrapper
+{
+	    background-color:white;
+		width:100%;
+		height:1000px;
+	    /*margin:0px 50px 50px 100px;*/
+}
+
+#wrapper #header
+{	
+	border:thin solid black;
+	background-color: #333333;
+	height:70px;
+	width:100%;
+	margin-top:0px;	
+}
+
+#wrapper #header #logo
+{
+	float:left;
+	width:200px;
+	height:50px;
+	margin-left:60px;
+	margin-top:15px;
+	font-family:'open-sans';
+	font-size:1.5em;
+	color:#888888;
+	
+}
+
+#wrapper #header #logo img
+{
+	margin-top: 10px;
+}
+
+#wrapper #header #logo span
+{
+	float:right;
+	padding-right: 60px; 
+	padding-top: 4px;
+	
+}
+/*
+#wrapper #header .menu
+{
+	width:70px;
+	height:70px;
+	/*border:thin solid white;
+	float:right;
+	font-family:'open-sans';
+	font-size:0.9em;
+	color:#888888;
+	cursor:pointer;
+}
+
+#wrapper #header .menu:hover
+{
+	background-color:#598990;
+	color:white;
+	
+}*/
+
+#header #menu
+{
+	/*border:thin solid white;*/
+	float:right;
+	list-style-type:none;
+	font-family:'open-sans';
+	font-size:0.95em;
+	color:#888888;
+	/*cursor:pointer;*/
+	margin:0px;
+	height: 50px; width: 400px; 
+	padding-top:20px;
+	padding-left:0px;
+}
+
+#header #menu .menu-option
+{
+	display:inline;
+	width: 40px; height: 40px; 
+	cursor:pointer;
+	padding:20px 25px 30px 20px;
+}
+ 
+#header #menu li:hover
+{
+	background-color:#598990;
+	color:white;
+}
+
+
+
+#wrapper #login_form
+{
+	border:thin solid #E2DEDE;
+	width:400px;
+	height:400px;
+	margin-top:200px;
+	margin-left:450px;
+	box-shadow:0px 0px 5px 8px #EAE8E8;
+}
+
+#wrapper #login_form #login_heading
+{
+	background-color:#f1f1f1;
+	/*border:thin solid green;*/
+	height:100px;
+	border-bottom:thin solid #787878;
+	font-family:'open-sans';
+}
+
+#wrapper #login_form #login_heading img
+{
+	margin-left: 110px; margin-top: 10px;
+}
+
+#wrapper #login_form #login_heading #span1
+{
+   	font-size:1.7em;
+ 	float:right;
+	margin-left: 0px; margin-right: 150px; margin-top: 12px;
+	color:#43a5b4;
+}
+
+#wrapper #login_form #login_heading #span2
+{
+   	float:left;
+	margin-left: 80px;
+	color:#43a5b4;
+}
+
+#wrapper #login_form #login_credentials
+{
+   	background-color:#f1f1f1;
+	/*border:thin solid green;*/
+ 	height: 300px;	
+}
+
+#wrapper #login_form #login_credentials #user
+{
+	width: 350px; height:35px;
+	margin-left: 20px; 
+	margin-top: 50px;
+	border:thin solid #E2DEDE;
+	
+}
+
+#wrapper #login_form #login_credentials #pass
+{
+	 width: 350px; height:35px;
+	 margin-left: 20px; 
+	 margin-top: 5px; 
+	 margin-bottom: 5px;
+	 border:thin solid #E2DEDE;
+}
+
+#wrapper #login_form #login_credentials #signin
+{
+	float:right;
+	margin-top: 10px; margin-right: 28px; width: 170px; height: 35px;
+	background-color:#43a5b4;
+	border:thin solid #43a5b4;
+	color:white;
+	font-family:'open-sans';
+}
+
+#wrapper #login_form #login_credentials img
+{
+	margin-top: 125px; margin-left: 10px;
+}
+
+#wrapper #login_form #login_credentials span
+{
+	float:right;
+	font-size:0.85em;
+	font-family:'open-sans';
+	margin-top: -30px; margin-right: 27px;
+	color:#85afb6;
+}
+
+#wrapper #login_form #login_credentials span a
+{
+	text-decoration:none;
+	color:#85afb6;
+}
+
+#wrapper #login_form #login_credentials span a:hover
+{
+	text-decoration:underline;
+	color:#85afb6;
+}
+
+#wrapper #footer
+{
+	/*border:thin solid green;*/
+	/*border: thin solid #008000;*/
+    height: 50px;
+	width:100%;
+    margin-top: 265px;
+}
+
+#wrapper #footer span
+{
+	font-family:'open-sans';
+	color:#7f7f7f;
+	margin-left: 550px;	
+}
+

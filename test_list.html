@@ -1,0 +1,156 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TestCube-Tests</title>
+<link rel="stylesheet" href="css/test_lists.css" type="text/css">
+<script type="text/javascript">
+		function showpopup()
+		{
+			var fade = document.getElementById('fade');
+			var add_test = document.getElementById('add_new_test');
+			fade.style.display="block";
+			add_test.style.display="block";
+			
+		}
+	
+		function closepopup()
+		{
+			var fade = document.getElementById('fade');
+			var add_test = document.getElementById('add_new_test');
+			fade.style.display="none";
+			add_test.style.display="none";
+		}
+</script>
+</head>
+<body>  
+        <div id="wrapper">
+
+            <div id="header">
+    
+                <div id="logo">
+                    <img src="images/logo.png" alt="logo" /> <span>TestCube</span>
+                </div>
+    
+                <div id="header-menu1">
+                    <p
+                        style="width: 50px; padding-top: 5px; padding-left: 20px; margin-top: 13px;">Logout</p>
+                </div>
+                <div id="header-menu2">
+                    <img src="images/username-user.png" alt="username" />
+                    <p>Deepak Garg</p>
+                </div>
+                <div id="header-menu3">
+                    <p style="padding-top: 5px; padding-left: 25px; margin-top: 14px;">Welcome</p>
+                </div>
+                <div id="header-menu4">
+                    <img src="images/help.png" alt="help" />
+                </div>
+            </div>
+        
+            <div id="menu-bar">
+    
+                <div class="menu-bar-items menu-bar-home">
+                    <img src="images/home.png" alt="home" /> <span>Home</span>
+                </div>
+    
+                <div class="menu-bar-items">
+                    <img src="images/tests.png" alt="tests" /> <span>Tests</span>
+                </div>
+    
+                <div class="menu-bar-items menu-bar-items1">
+                    <img src="images/questions.png" alt="questions" /> <span>Questions</span>
+                </div>
+    
+                <div class="menu-bar-items menu-bar-items1">
+                    <img src="images/categories.png" alt="categories" /> <span>Categories</span>
+                </div>
+    
+                <div class="menu-bar-items  menu-bar-items1">
+                    <img src="images/certificates.png" alt="certificates" /> <span>Certificates</span>
+                </div>
+    
+                <div class="menu-bar-items">
+                    <img src="images/results.png" alt="results" /> <span>Results</span>
+                </div>
+    
+            </div>
+            
+            <div id="search_delete_add">
+               
+               	<input type="text" id="search-box" placeholder="Search...">
+                <input type="image" id ="search-button" src="images/search.png" alt="submit">
+        
+        		<a href="#" onClick="showpopup()"><img src="images/add.png" alt="add"></a>
+                <a href="#"><img src="images/delete.png" alt="delete"></a>
+            </div>
+            
+            <div id="test_list">
+               
+               <table>
+               		<thead>
+                    <tr>
+                    	<th>Assign</th>
+                        <th class="left">Test Name</th>
+                        <th class="left">Test Description</th>
+                        <th class="actions">Actions</th>
+                    </tr>
+                    </thead>
+               		<tbody>
+            		<tr>
+                    	<td><input type="checkbox"></td>
+                        <td class="left">Test 1.1</td>
+                        <td class="left">This Test if for Mysql Dev.</td>
+                        <td class="actions"><img src="images/add.png" alt="add"><img src="images/edit.png" alt="edit"><img src="images/view.png" alt="view"></td>
+                    </tr>
+                   	<tr>
+                    	<td><input type="checkbox"></td>
+                        <td class="left">Test 1.1</td>
+                        <td class="left">This Test if for Mysql Dev.</td>
+                        <td class="actions"><img src="images/add.png" alt="add"><img src="images/edit.png" alt="edit"><img src="images/view.png" alt="view"></td>
+                    </tr>
+                   <tr>
+                    	<td><input type="checkbox"></td>
+                        <td class="left">Test 1.1</td>
+                        <td class="left">This Test if for Mysql Dev.</td>
+                        <td class="actions"><img src="images/add.png" alt="add"><img src="images/edit.png" alt="edit"><img src="images/view.png" alt="view"></td>
+                    </tr>
+
+                    </tbody>
+
+               </table>
+       
+            </div>
+            
+            <div id="assign-button">
+            	<input type="button" name="assign" value="Assign">
+            </div>
+         
+            <div id="footer">
+			<span>Copyright @ Osscube.com</span>
+		</div>
+           
+	</div>
+    
+    <div id="fade"></div>
+    
+    <div id="add_new_test" class="popup">
+		<div id="add_new_test_heading" class="popup_heading">
+        	<span>Add New Test</span>
+        </div>
+    	
+        <div id="add_new_test_input">
+
+         	<span>Test Name</span>
+         	<input type="text" id="newtest" name="newtest">
+            <span id="category">Category</span>
+            <select id="drop-down">
+            	<option>Select Category</option>
+                <option>Java</option>
+        	</select>
+            <input type="submit" id="button" value="Add Test">
+        </div>
+    </div>
+    
+</body>
+</html>
