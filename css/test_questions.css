@@ -102,17 +102,113 @@ body
 	color:white;
 }
 
+#wrapper #current_question_number
+{
+   /*border:thin solid red;*/
+   width: 100px; height:100px; 
+   margin-left: 150px; margin-top: 100px;
+   float:left;
+   border-radius:50%;
+   color:white;
+   background-color:#43a5b4;
+   text-align:center;
+   font-family:'open-sans';	
+}
+
+#wrapper #of
+{
+	margin-top: 115px; margin-left: 15px; margin-right: 5px; 
+	width: 30px; height: 30px;
+	/*border:thin solid red;*/
+	float:left;
+	color:#7f7f7f;
+	font-family:'open-sans';
+	font-size:1.3em;
+}
+#wrapper #of span
+{
+	float:left;
+	padding-top:5px;
+	padding-left:6px;
+}
+
+#wrapper #last_question_number
+{
+   border:thin solid #7f7f7f;
+   width: 100px; height:100px;
+   margin-top: 100px;
+   margin-left:10px;	
+   float:left;	
+   border-radius:50%;
+   color:#7f7f7f;
+   background-color:white;
+   text-align:center;
+   font-family:'open-sans';
+}
+
+#wrapper .question_number 
+{	
+	float:left;
+	padding-top: 35px; padding-left: 45px;
+}
+
 #wrapper #questions_container
 {
-	border:thin solid red;	
+	border:thin solid #7f7f7f;
+    height: 50%;
+    margin-left: 50px;
+    margin-top: 150px;
+    width: 80%;	
 }
 
 #wrapper #questions_container #display_questions
 {
-    border:thin solid red;
+	/*border: thin solid #FF0000;*/
+    clear: both;
+    height: 40%;
+    margin-top: 90px;
+    width: 90%;
+	font-family:'open-sans';
+	color:#7f7f7f
+}
+
+#wrapper #questions_container #display_questions p
+{
+	margin-left:10px;	
+}
+
+#wrapper #questions_container #display_questions input
+{
+	margin-left: 35px;
+	margin-bottom:15px;	
 }
 
 #wrapper #questions_container #buttons_container
 {
-   	border:thin solid red;
+   	border-top:thin solid #7f7f7f;
+    clear: both;
+    height: 10%;
+    margin-top: 159px;
+    width: 100%;
+}
+
+#wrapper #questions_container #buttons_container .buttons
+{
+	float:left;
+	/*border:thin solid blue;*/
+	border-right:thin solid white;
+	height: 100%;
+    width: 20%;
+ 	font-family:'open-sans';
+	font-size:0.95em;
+	color:white;
+	background-color:#43a5b4;
+}
+
+#wrapper #questions_container #buttons_container .buttons span
+{
+	float:left;
+	margin-top:15px;
+	margin-left:100px;
+}
 }
